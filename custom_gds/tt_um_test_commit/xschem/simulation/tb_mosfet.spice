@@ -1,0 +1,37 @@
+** sch_path: /foss/designs/tt10-uR-IPs/xschem/tb_mosfet.sch
+**.subckt tb_mosfet
+V2 vdd_hi GND 5
+V5 in GND dc 5 pulse 5 0 0 1n 1n 0.05u 0.1u
+.save v(vdd_hi)
+.save v(in)
+.save v(out)
+XM10 out in vdd_hi vdd_hi sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 out in GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XC1 out GND sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+**** begin user architecture code
+
+
+.control
+*set filetype=ascii
+*save all
+
+op
+tran 0.1n 1u
+
+write tb_mosfet.raw
+*exit
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,16 @@
+** sch_path: /tmp/tt10-level-shifter/xschem/level_shifter2.sch
+.subckt level_shifter2 VSS VDD VDD_L IN OUT
+*.PININFO VDD_L:B VDD:B VSS:B IN:I OUT:O
+XM5 out_p src_n net1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1.68 nf=1 m=1
+XM6 out_n IN net1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1.68 nf=1 m=1
+XM7 out_p out_p VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=0.42 nf=1 m=1
+XM8 out_n out_p VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=0.42 nf=1 m=1
+XM9 OUT out_n VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM10 OUT out_n VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.84 nf=1 m=1
+XM1 net1 net2 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.3 W=1.68 nf=1 m=1
+XM2 net2 net2 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.3 W=0.42 nf=1 m=1
+XM3 net2 net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.6 W=0.42 nf=1 m=1
+XM4 src_n src_n VDD_L VDD_L sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.42 nf=1 m=1
+XM11 src_n src_n VSS VSS sky130_fd_pr__nfet_01v8 L=0.6 W=0.42 nf=1 m=1
+.ends
+.end

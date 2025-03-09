@@ -1,0 +1,85 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1740491448
+<< error_p >>
+rect -29 -53 29 -47
+rect -29 -87 -17 -53
+rect -29 -93 29 -87
+<< nwell >>
+rect -226 -226 226 226
+<< pmoshvt >>
+rect -30 -6 30 78
+<< pdiff >>
+rect -88 66 -30 78
+rect -88 6 -76 66
+rect -42 6 -30 66
+rect -88 -6 -30 6
+rect 30 66 88 78
+rect 30 6 42 66
+rect 76 6 88 66
+rect 30 -6 88 6
+<< pdiffc >>
+rect -76 6 -42 66
+rect 42 6 76 66
+<< nsubdiff >>
+rect -190 156 -94 190
+rect 94 156 190 190
+rect -190 93 -156 156
+rect 156 93 190 156
+rect -190 -156 -156 -93
+rect 156 -156 190 -93
+rect -190 -190 -94 -156
+rect 94 -190 190 -156
+<< nsubdiffcont >>
+rect -94 156 94 190
+rect -190 -93 -156 93
+rect 156 -93 190 93
+rect -94 -190 94 -156
+<< poly >>
+rect -30 78 30 104
+rect -30 -37 30 -6
+rect -33 -53 33 -37
+rect -33 -87 -17 -53
+rect 17 -87 33 -53
+rect -33 -103 33 -87
+<< polycont >>
+rect -17 -87 17 -53
+<< locali >>
+rect -190 156 -94 190
+rect 94 156 190 190
+rect -190 93 -156 156
+rect 156 93 190 156
+rect -76 66 -42 82
+rect -76 -10 -42 6
+rect 42 66 76 82
+rect 42 -10 76 6
+rect -33 -87 -17 -53
+rect 17 -87 33 -53
+rect -190 -156 -156 -93
+rect 156 -156 190 -93
+rect -190 -190 -94 -156
+rect 94 -190 190 -156
+<< viali >>
+rect -76 6 -42 66
+rect 42 6 76 66
+rect -17 -87 17 -53
+<< metal1 >>
+rect -82 66 -36 78
+rect -82 6 -76 66
+rect -42 6 -36 66
+rect -82 -6 -36 6
+rect 36 66 82 78
+rect 36 6 42 66
+rect 76 6 82 66
+rect 36 -6 82 6
+rect -29 -53 29 -47
+rect -29 -87 -17 -53
+rect 17 -87 29 -53
+rect -29 -93 29 -87
+<< properties >>
+string FIXED_BBOX -173 -173 173 173
+string gencell sky130_fd_pr__pfet_01v8_hvt
+string library sky130
+string parameters w 0.42 l 0.3 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 0 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

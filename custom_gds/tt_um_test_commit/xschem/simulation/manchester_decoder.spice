@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/tt10-uR-IPs/xschem/manchester_decoder.sch
+**.subckt manchester_decoder AA BB YY
+*.ipin AA
+*.ipin BB
+*.opin YY
+x1 AA BB VGND VNB VPB VPWR YY sky130_fd_sc_hd__xnor2_1
+**.ends
+.end
