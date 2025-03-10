@@ -148,6 +148,21 @@ jobs:
             exit 1
           fi
 
+      #- name: Publish build logs
+      #  #if: success() || failure()
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: GDS_${{ matrix.project }}
+      #    path: |
+      #      hdl/${{ matrix.project }}/runs/*
+
+      - name: Install KLayout
+        shell: bash
+        run: |
+          wget https://github.com/TinyTapeout/klayout/releases/download/v0.29.11/klayout_0.29.11-1_amd64.deb
+          sudo apt-get update && sudo apt-get install -y ./klayout_0.29.11-1_amd64.deb
+          pip install klayout==0.29.11
+
       - name: Prepare tt_submission artifact
         working-directory: hdl/${{ matrix.project }}
         shell: bash
@@ -176,14 +191,6 @@ jobs:
             hdl/${{ matrix.project }}/tt_submission/*
             hdl/${{ matrix.project }}/info.yaml
             hdl/${{ matrix.project }}/LICENSE
-
-      #- name: Publish build logs
-      #  #if: failure()
-      #  uses: actions/upload-artifact@v4
-      #  with:
-      #    name: GDS_${{ matrix.project }}
-      #    path: |
-      #      hdl/${{ matrix.project }}/runs/*
 
   reharden-wokwi:
     strategy:
@@ -282,6 +289,21 @@ jobs:
             exit 1
           fi
 
+      #- name: Publish build logs
+      #  #if: failure()
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: GDS_${{ matrix.project }}
+      #    path: |
+      #      wokwi/${{ matrix.project }}/runs/*
+
+      - name: Install KLayout
+        shell: bash
+        run: |
+          wget https://github.com/TinyTapeout/klayout/releases/download/v0.29.11/klayout_0.29.11-1_amd64.deb
+          sudo apt-get update && sudo apt-get install -y ./klayout_0.29.11-1_amd64.deb
+          pip install klayout==0.29.11
+
       - name: Prepare tt_submission artifact
         working-directory: wokwi/${{ matrix.project }}
         shell: bash
@@ -310,12 +332,4 @@ jobs:
             wokwi/${{ matrix.project }}/tt_submission/*
             wokwi/${{ matrix.project }}/info.yaml
             wokwi/${{ matrix.project }}/LICENSE
-
-      #- name: Publish build logs
-      #  #if: failure()
-      #  uses: actions/upload-artifact@v4
-      #  with:
-      #    name: GDS_${{ matrix.project }}
-      #    path: |
-      #      wokwi/${{ matrix.project }}/runs/*
 
