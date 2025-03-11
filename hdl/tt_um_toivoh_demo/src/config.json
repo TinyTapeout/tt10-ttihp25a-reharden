@@ -13,11 +13,13 @@
 
   "//": "PL_TARGET_DENSITY_PCT - You can increase this if Global Placement fails with error GPL-0302.",
   "//": "Users have reported that values up to 80 worked well for them.",
-  "PL_TARGET_DENSITY_PCT": 70,
+  "//PL_TARGET_DENSITY_PCT": 81,
+  "PL_TARGET_DENSITY_PCT": 77,
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 20ns == 50MHz.",
-  "CLOCK_PERIOD": 20,
+    "//": "# 1/(19.84 ns) > 50.4 MHz",
+  "CLOCK_PERIOD": 19.84,
 
   "//": "Hold slack margin - Increase them in case you are getting hold violations.",
   "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
@@ -32,6 +34,12 @@
   "CLOCK_PORT": "clk",
 
   "//": "Configuration docs: https://openlane.readthedocs.io/en/latest/reference/configuration.html",
+
+  "//FALLBACK_SDC_FILE": "dir::project.sdc",
+
+  "//USE_LIGHTER": 1,
+  "SYNTH_STRATEGY": "AREA 2",
+
 
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
