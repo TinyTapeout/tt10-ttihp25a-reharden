@@ -174,7 +174,7 @@ jobs:
           strm2oas tt_submission/${TOP_MODULE}.gds tt_submission/${TOP_MODULE}.oas
           if [ "$PDK" == "sky130A" ]; then
             cp runs/wokwi/final/pnl/${TOP_MODULE}.pnl.v tt_submission/${TOP_MODULE}.v
-          else        
+          else
             cp runs/wokwi/final/nl/${TOP_MODULE}.nl.v tt_submission/${TOP_MODULE}.v
           fi
           cp runs/wokwi/{OPENLANE_VERSION,PDK_SOURCES,resolved.json} tt_submission/
@@ -197,31 +197,8 @@ jobs:
       fail-fast: false
       matrix:
         project:
-          - tt_um_wokwi_422957657550394369
-          - tt_um_wokwi_422957918936350721
-          - tt_um_wokwi_422957954050029569
-          - tt_um_wokwi_422958894385882113
-          - tt_um_wokwi_422959954857061377
-          - tt_um_wokwi_422959974126748673
-          - tt_um_wokwi_422960054456096769
-          - tt_um_wokwi_422960078645704705
-          - tt_um_wokwi_422960080008854529
-          - tt_um_wokwi_422960085743520769
-          - tt_um_wokwi_422960130190575617
-          - tt_um_wokwi_422960174616660993
-          - tt_um_wokwi_422960332734617601
-          - tt_um_wokwi_422960491546730497
-          - tt_um_wokwi_422961309631153153
-          - tt_um_wokwi_422962760920307713
-          - tt_um_wokwi_422962904571040769
-          - tt_um_wokwi_422962914561876993
-          - tt_um_wokwi_422962959838345217
-          - tt_um_wokwi_422964381148718081
-          - tt_um_wokwi_422964384478997505
-          - tt_um_wokwi_422964754310747137
-          - tt_um_wokwi_422965035809389569
-          - tt_um_wokwi_422968416190311425
-          - tt_um_wokwi_422968696249282561
+          - tt_um_wokwi_group_11
+          - tt_um_wokwi_group_12
 
     runs-on: ubuntu-24.04
     env:
@@ -315,7 +292,7 @@ jobs:
           strm2oas tt_submission/${TOP_MODULE}.gds tt_submission/${TOP_MODULE}.oas
           if [ "$PDK" == "sky130A" ]; then
             cp runs/wokwi/final/pnl/${TOP_MODULE}.pnl.v tt_submission/${TOP_MODULE}.v
-          else        
+          else
             cp runs/wokwi/final/nl/${TOP_MODULE}.nl.v tt_submission/${TOP_MODULE}.v
           fi
           cp runs/wokwi/{OPENLANE_VERSION,PDK_SOURCES,resolved.json} tt_submission/
