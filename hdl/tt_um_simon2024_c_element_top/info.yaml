@@ -28,6 +28,7 @@ project:
     - "celcomb_chain.v"
     - "inv4.v"
     - "celem.v"
+    - "sky130_polyfill.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
