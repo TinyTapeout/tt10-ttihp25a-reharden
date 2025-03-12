@@ -58,7 +58,6 @@ jobs:
           - tt_um_multiplier
           - tt_um_nithishreddykvs
           - tt_um_obriensp_jtag
-          - tt_um_octa16
           - tt_um_ole_moller_priority_encoder_to_7_segment_decoder
           - tt_um_project
           - tt_um_Qwendu_spi_fpu
