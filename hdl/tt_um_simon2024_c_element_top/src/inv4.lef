@@ -1,0 +1,61 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO inv4
+  CLASS CORE ;
+  FOREIGN inv4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 2.600 BY 2.720 ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.172000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.590 1.200 1.230 1.450 ;
+    END
+  END A
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.800 0.290 1.130 0.730 ;
+      LAYER met1 ;
+        RECT 0.780 0.330 1.140 0.700 ;
+        RECT 0.000 -0.110 2.590 0.330 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.780 1.900 1.150 2.410 ;
+      LAYER met1 ;
+        RECT 0.290 2.960 2.260 2.970 ;
+        RECT 0.020 2.330 2.620 2.960 ;
+        RECT 0.780 1.940 1.150 2.330 ;
+    END
+  END VPWR
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.335400 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.380 1.830 1.890 2.250 ;
+        RECT 1.460 1.170 1.890 1.830 ;
+        RECT 1.460 0.720 1.760 1.170 ;
+        RECT 1.380 0.370 1.760 0.720 ;
+    END
+  END Y
+  OBS
+      LAYER nwell ;
+        RECT -0.480 1.430 3.100 3.220 ;
+  END
+END inv4
+END LIBRARY
+

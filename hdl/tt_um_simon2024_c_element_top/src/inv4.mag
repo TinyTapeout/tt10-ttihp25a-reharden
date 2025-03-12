@@ -1,0 +1,104 @@
+magic
+tech sky130A
+timestamp 1741565291
+<< nwell >>
+rect -48 143 310 322
+<< nmos >>
+rect 115 32 135 76
+<< pmos >>
+rect 115 188 135 230
+<< ndiff >>
+rect 78 63 115 76
+rect 78 44 86 63
+rect 105 44 115 63
+rect 78 32 115 44
+rect 135 63 174 76
+rect 135 44 148 63
+rect 167 44 174 63
+rect 135 32 174 44
+<< pdiff >>
+rect 78 219 115 230
+rect 78 197 86 219
+rect 107 197 115 219
+rect 78 188 115 197
+rect 135 219 174 230
+rect 135 201 146 219
+rect 163 201 174 219
+rect 135 188 174 201
+<< ndiffc >>
+rect 86 44 105 63
+rect 148 44 167 63
+<< pdiffc >>
+rect 86 197 107 219
+rect 146 201 163 219
+<< poly >>
+rect 115 230 135 244
+rect 115 149 135 188
+rect 59 142 142 149
+rect 59 125 73 142
+rect 90 125 142 142
+rect 59 116 142 125
+rect 115 76 135 116
+rect 115 19 135 32
+<< polycont >>
+rect 73 125 90 142
+<< locali >>
+rect 78 229 115 241
+rect 78 219 87 229
+rect 78 197 86 219
+rect 109 199 115 229
+rect 107 197 115 199
+rect 78 190 115 197
+rect 138 219 189 225
+rect 138 201 146 219
+rect 163 201 189 219
+rect 138 183 189 201
+rect 59 142 123 145
+rect 59 125 73 142
+rect 90 125 123 142
+rect 59 120 123 125
+rect 146 117 189 183
+rect 80 66 113 73
+rect 146 72 176 117
+rect 80 33 85 66
+rect 107 33 113 66
+rect 138 63 176 72
+rect 138 44 148 63
+rect 167 44 176 63
+rect 138 37 176 44
+rect 80 29 113 33
+<< viali >>
+rect 87 219 109 229
+rect 87 199 107 219
+rect 107 199 109 219
+rect 85 63 107 66
+rect 85 44 86 63
+rect 86 44 105 63
+rect 105 44 107 63
+rect 85 33 107 44
+<< metal1 >>
+rect 29 296 226 297
+rect 2 233 262 296
+rect 78 229 115 233
+rect 78 199 87 229
+rect 109 199 115 229
+rect 78 194 115 199
+rect 78 66 114 70
+rect 78 33 85 66
+rect 107 33 114 66
+rect 0 -11 259 33
+<< labels >>
+flabel locali 66 124 115 141 0 FreeSans 120 0 0 0 A
+port 0 nsew signal input
+flabel locali 152 123 183 152 0 FreeSans 120 0 0 0 Y
+port 3 nsew signal output
+flabel metal1 40 243 215 287 0 FreeSans 120 0 0 0 VPWR
+port 2 nsew power bidirectional
+flabel metal1 40 -11 215 27 0 FreeSans 120 0 0 0 VGND
+port 1 nsew ground bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 260 272
+string LEFclass CORE
+string LEFsite unithd
+string LEFsource USER
+<< end >>
