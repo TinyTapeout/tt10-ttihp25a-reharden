@@ -68,7 +68,6 @@ jobs:
           - tt_um_rte_sine_synth
           - tt_um_save_buffer_hash_table
           - tt_um_schoeberl_wildcat
-          - tt_um_simon2024_c_element_top
           - tt_um_space_invaders_game
           - tt_um_spacewar
           - tt_um_spi_pwm_djuara
