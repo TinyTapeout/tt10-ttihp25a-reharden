@@ -217,22 +217,7 @@ jobs:
         project:
           - tt_um_wokwi_group_11
           - tt_um_wokwi_group_12
-          - tt_um_wokwi_425498066535550977
-          - tt_um_wokwi_425498096996685825
-          - tt_um_wokwi_425498138683883521
-          - tt_um_wokwi_425498175661927425
-          - tt_um_wokwi_425498176219770881
-          - tt_um_wokwi_425498190842166273
-          - tt_um_wokwi_425498200554080257
-          - tt_um_wokwi_425498241932991489
-          - tt_um_wokwi_425498323071819777
-          - tt_um_wokwi_425498338463870977
-          - tt_um_wokwi_425498675799185409
-          - tt_um_wokwi_425498910144429057
-          - tt_um_wokwi_425499372555997185
-          - tt_um_wokwi_425499738293047297
-          - tt_um_wokwi_425500385593779201
-          - tt_um_wokwi_425501309236263937
+          - tt_um_wokwi_group_13
 
     runs-on: ubuntu-24.04
     env:
