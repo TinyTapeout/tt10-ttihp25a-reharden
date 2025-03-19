@@ -3,7 +3,7 @@
 // verilator lint_off UNUSEDSIGNAL
 // verilator lint_off PINCONNECTEMPTY
 
-module tt_um_wokwi_group_11(
+module tt_um_wokwi_group_13(
   input  wire [7:0] ui_in,    // Dedicated inputs
   output wire [7:0] uo_out,    // Dedicated outputs
   input  wire [7:0] uio_in,    // IOs: Input path
